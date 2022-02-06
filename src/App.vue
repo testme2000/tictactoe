@@ -1,16 +1,29 @@
 <template>
   <div id="app">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+      <div class="container">
+        <p class="h1">Welcome to Tic Tac Toe Game</p>
+        <p class="h3">1st Player is X</p>
+        <p class="h3">2nd Player is O</p>
+        <p class="h5">You are 1st player (X)</p>
+        <p class="h6">Lets the game begin</p>
+        <Board />
+      </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  import Board from './components/board.vue'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Board
+  },
+  data: function() {
+    return {
+      logo: require('./assets/cross.png')
+    }
   }
 }
 </script>
@@ -24,4 +37,5 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
 </style>
