@@ -20,9 +20,6 @@
             {
                 this.WinningMsg = "The Game is draw :  ";
             }
-        },
-        updated() {
-            console.log("Game over updated");
         }
     }
 

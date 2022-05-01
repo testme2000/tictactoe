@@ -2,10 +2,10 @@
   <div id="app">
       <div class="container">
         <p class="h1">Welcome to Tic Tac Toe Game</p>
-        <p class="h3">1st Player is X</p>
+        <p class="h2">1st Player is X</p>
         <p class="h3">2nd Player is O</p>
-        <p class="h5">You are 1st player (X)</p>
-        <p class="h6">Lets the game begin</p>
+        <p class="h4">You are 1st player (X)</p>
+        <p class="h5">Lets the game begin</p>
         <Board />
       </div>
   </div>

@@ -23,8 +23,6 @@
                 this.updatePosition(msg);
                 if(this.DoWeHaveWinner()) {
                     // We found the WinnerFound
-                    console.log("We got the Winer");
-                    console.log(this.ActiveWinningPosition);
                     this.$emit('gotWinner',this.ActivePlayer);
                 }
                 else if(this.IsGameDraw()) {
@@ -33,9 +31,7 @@
                     this.$emit('gamedraw');
                 }
                 else {
-                    console.log("Board at the glance : ",this.MoveSnapshot);
                     this.$emit('nextPlayer');
-                    
                 }
             },
             updatePosition(moveData) {
